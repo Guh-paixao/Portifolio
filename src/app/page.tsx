@@ -1,3 +1,12 @@
+
+
 export default function Home() {
-  return <h1>Hello, Next.js!</h1>
+  return (
+    <main className="flex bg-black">
+      <div className="flex flex-1 justify-center items-center">
+        <div className="flex flex-1 h-screen w-full m-10 border-[1px] border-white">
+        </div>
+      </div>
+    </main>
+  )
 }
