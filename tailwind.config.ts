@@ -12,6 +12,15 @@ const config: Config = {
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
 			},
+			fontWeight: {
+				extralight: '100',
+				light: '200',
+				normal: '400',
+				medium: '500',
+				semibold: '600',
+				bold: '700',
+				extrabold: '800'
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
