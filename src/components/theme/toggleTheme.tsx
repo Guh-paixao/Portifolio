@@ -13,7 +13,8 @@ import {
 } from "@/components/ui/dropdown-menu"
 import Image from "next/image"
 
-import Xs from "@/assets/images/SVGs/X.svg";
+import XWhite from "@/assets/images/SVGs/X_White.svg";
+import XBlack from "@/assets/images/SVGs/X_Black.svg";
 
 export function ModeToggle() {
     const { setTheme } = useTheme()
@@ -21,17 +22,18 @@ export function ModeToggle() {
     return (
         <div className="flex flex-col items-center">
             <div className="absolute top-8">
-                <div className="flex flex-col gap-2 select-none">
-                    <Image src={Xs} alt="Xs" width={16} height={16} className="pointer-events-none" />
-                    <Image src={Xs} alt="Xs" width={16} height={16} className="pointer-events-none" />
-                    <Image src={Xs} alt="Xs" width={16} height={16} className="pointer-events-none" />
-                    <Image src={Xs} alt="Xs" width={16} height={16} className="pointer-events-none" />
+                <div className="dark:flex flex-col gap-2 select-none hidden dark:visible">
+                    <Image src={XWhite} alt="Xs" width={16} height={16} className={`pointer-events-none`} />
+                </div>
+
+                <div className="flex flex-col gap-2 select-none visible dark:hidden">
+                    <Image src={XBlack} alt="Xs" width={16} height={16} className={`pointer-events-none`} />
                 </div>
             </div>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button className="mx-0" variant="outline" size="icon">
-                        <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                        <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 text-black transition-all dark:-rotate-90 dark:scale-0" />
                         <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                         <span className="sr-only">Mudar Tema</span>
                     </Button>
