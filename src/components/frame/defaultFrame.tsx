@@ -2,6 +2,8 @@ import { ReactNode } from "react"
 import LinksButton from "@/components/externalButtons/links"
 import Frame from "@/components/frame"
 import { ModeToggle } from "@/components/theme/toggleTheme"
+import NavMenu from "../navMenu"
+import ContactIndicator from "./contactIndicator"
 
 export default function Layout(children: { children: ReactNode }) {
     return (
@@ -14,6 +16,12 @@ export default function Layout(children: { children: ReactNode }) {
                     <ModeToggle />
                     <Frame>
                         {children.children}
+                        <div className="flex mr-24 items-center">
+                            <NavMenu />
+                        </div>
+                        <div className="flex">
+                            <ContactIndicator />
+                        </div>
                     </Frame>
                     <LinksButton />
                 </div>
