@@ -19,7 +19,7 @@ export default function Layout(children: { children: ReactNode }) {
                 </div>
                 <div className="flex mx-9 py-2 justify-between items-center">
                     <span className="font-poppins text-xs opacity-75 text-slate-800 dark:text-slate-400">© TODOS OS DIREITOS RESERVADOS <span className="text-slate-400">/ Inspired by Keita Yamata Portifolio</span></span>
-                    <span className="font-poppins text-xs mr-5 opacity-75">VERSION 1.0</span>
+                    <span className="font-poppins text-xs mr-5 opacity-50 text-slate-800 dark:text-slate-400">VERSION 1.0</span>
                 </div>
             </div>
         </main>
