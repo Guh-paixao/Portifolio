@@ -2,6 +2,7 @@ import './globals.css'
 import { Poppins } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/themeProvider'
 import Layout from '@/components/frame/defaultFrame'
+import Starfield from 'react-starfield';
 
 // If loading a variable font, you don't need to specify the font weight
 const poppins = Poppins({
@@ -25,6 +26,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Starfield
+              starCount={3000}
+              starColor={[255, 255, 255]}
+              speedFactor={0.05}
+              backgroundColor="black"
+            />
             <Layout>
               {children}
             </Layout>
