@@ -14,7 +14,7 @@ export default function Layout(children: { children: ReactNode }) {
     useEffect(() => {
         const tl = gsap.timeline();
         tl.to(defaultRef.current, { display: "none" })
-            .to(introRef.current, { duration: 4.5, opacity: 1 }) // Mostrar IntroFrame
+            .to(introRef.current, { duration: 3.7, opacity: 1 }) // Mostrar IntroFrame
             .to(introRef.current, { duration: 2, opacity: 0, display: "none" }) // Esconder IntroFrame
             .to(defaultRef.current, { duration: 2, opacity: 1, display: 'flex' }); // Mostrar DefaultFrame
     }, []);

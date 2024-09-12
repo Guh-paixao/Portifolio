@@ -21,7 +21,7 @@ export function ModeToggle() {
 
     return (
         <div className="flex flex-col items-center">
-            <div className="absolute top-8">
+            <div className="absolute top-9">
                 <div className="dark:flex flex-col gap-2 select-none hidden dark:visible">
                     <Image src={XWhite} alt="Xs" width={16} height={16} className={`pointer-events-none`} />
                 </div>
@@ -32,7 +32,7 @@ export function ModeToggle() {
             </div>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <Button className="mx-0" variant="outline" size="icon">
+                    <Button className="mx-0 focus-visible:ring-0" variant="outline" size="icon">
                         <SunMoon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 dark:text-white text-black transition-all" />
                         <span className="sr-only">Mudar Tema</span>
                     </Button>
