@@ -25,7 +25,7 @@ export default function Layout(children: { children: ReactNode }) {
                 <IntroFrame />
             </div>
 
-            <div className="flex flex-1 h-screen opacity-0" ref={defaultRef}>
+            <div className="flex flex-1 opacity-0" ref={defaultRef}>
                 <Starfield
                     starCount={3000}
                     starColor={[255, 255, 255]}
