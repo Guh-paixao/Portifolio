@@ -30,7 +30,7 @@ export default function IntroFrame() {
 
                 <div ref={dateRef} className="flex gap-2 opacity-0 justify-center items-center">
                     <span className="font-poppins font-light text-slate-600 dark:text-slate-400">{date.toLocaleDateString('pt-BR')}</span>
-                    <span className="font-poppins font-light text-slate-600 dark:text-slate-400">{`${date.getHours()}:${date.getMinutes()}`}</span>
+                    <span className="font-poppins font-light text-slate-600 dark:text-slate-400">{`${date.getHours()}:${date.getMinutes().toFixed(0)}`}</span>
                 </div>
             </div>
         </main>

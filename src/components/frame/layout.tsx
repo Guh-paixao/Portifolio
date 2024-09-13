@@ -26,16 +26,16 @@ export default function Layout(children: { children: ReactNode }) {
             </div>
 
             <div className="flex flex-1 opacity-0" ref={defaultRef}>
-                <Starfield
-                    starCount={3000}
-                    starColor={[255, 255, 255]}
-                    speedFactor={0.05}
-                    backgroundColor="black"
-                />
                 <DefaultFrame>
                     {children.children}
                 </DefaultFrame>
             </div>
+            <Starfield
+                starCount={3000}
+                starColor={[255, 255, 255]}
+                speedFactor={0.05}
+                backgroundColor="black"
+            />
         </main>
     )
 }

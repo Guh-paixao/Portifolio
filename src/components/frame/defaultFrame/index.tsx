@@ -10,7 +10,7 @@ import LinksButton from "@/components/externalButtons/links";
 export default function DefaultFrame({ children }: { children: ReactNode }) {
 
     return (
-        <div className="flex flex-1 flex-col" id='intro'>
+        <div className="flex flex-1 flex-col">
             <div className="flex self-end mr-14 py-1">
                 <span className="font-poppins pointer-events-none text-dark dark:text-white">「幸福は自分自身に依存する。」</span>
             </div>
