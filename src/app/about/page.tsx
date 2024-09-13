@@ -13,7 +13,7 @@ export default function About() {
                 </div>
             </div>
             <div className="flex">
-                <p className="font-poppins text-justify w-72 leading-loose">
+                <p className="font-poppins text-justify text-pretty w-72 leading-loose">
                     Sou um desenvolvedor apaixonado por criar experiências únicas, tanto na web quanto no mundo dos jogos. Com uma formação em Engenharia da Computação, sempre fui movido pela curiosidade e pela vontade de transformar ideias em realidade. Nos últimos tempos, tenho me dedicado ao desenvolvimento de jogos, onde encontrei uma forma de unir minha paixão por programação com a criatividade do design. Meu sonho é publicar um jogo de sucesso na Steam, algo que reflita todo o esforço e a imaginação que coloco em cada projeto.
                 </p>
             </div>
