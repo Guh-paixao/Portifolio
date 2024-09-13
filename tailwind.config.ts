@@ -21,6 +21,10 @@ const config: Config = {
 				bold: '700',
 				extrabold: '800'
 			},
+			animation: {
+				typewriter: "typewriter 2s steps(11) forwards",
+				caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -69,6 +73,30 @@ const config: Config = {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			keyframes: {
+				typewriter: {
+					to: {
+						left: "100%"
+					}
+				},
+				blink: {
+					'0%': {
+						opacity: '0',
+					},
+					'0.1%': {
+						opacity: '1',
+					},
+					'50%': {
+						opacity: '1',
+					},
+					'50.1%': {
+						opacity: '0',
+					},
+					'100%': {
+						opacity: '0',
+					},
+				},
 			}
 		}
 	},
