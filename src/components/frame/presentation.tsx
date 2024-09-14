@@ -10,7 +10,7 @@ export default function Presentation() {
 
     useEffect(() => {
         const tl = gsap.timeline()
-        tl.to(textRef.current, { opacity: 1, y: 10, duration: 0.5, delay: 1 })
+        tl.to(textRef.current, { opacity: 1, y: 10, duration: 0.5 })
         tl.to(titlesRef.current, { opacity: 1, y: 10, duration: 1, })
     }, [])
 
