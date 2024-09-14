@@ -19,7 +19,7 @@ export default function About() {
 
     return (
         <div className="flex flex-1 ml-48 2xl:ml-52 items-center">
-            <div className="flex flex-row items-start gap-8 2xl:gap-10">
+            <div className="flex flex-row items-start gap-10 2xl:gap-14">
                 <div ref={portraitRef} className="flex flex-col opacity-0 bg-white 2xl:w-[230px] h-80 mt-2 border-t-4 items-center justify-center select-none p-4 pt-4 2xl:gap-4 gap-2 border-zinc-600 border-2 dark:border-0">
                     <Image src={dev} alt="Developer" width={210} />
                     <div className="flex flex-row items-center justify-center 2xl:gap-8 xl:gap-10">
@@ -31,7 +31,8 @@ export default function About() {
                 </div>
                 <div ref={textRef} className="flex opacity-0">
                     <p className="font-poppins text-justify text-dark dark:text-white text-base 2xl:text-lg text-pretty w-80 xl:w-72 2xl:w-80 leading-loose">
-                        Sou um desenvolvedor apaixonado por criar experiências únicas, tanto na web quanto no mundo dos jogos. Com uma formação em Engenharia da Computação, sempre fui movido pela curiosidade e pela vontade de transformar ideias em realidade. Nos últimos tempos, tenho me dedicado ao desenvolvimento de jogos, onde encontrei uma forma de unir minha paixão por programação com a criatividade do design. Meu sonho é publicar um jogo de sucesso na Steam, algo que reflita todo o esforço e a imaginação que coloco em cada projeto.
+                        Sou um desenvolvedor apaixonado por criar experiências únicas, tanto na web quanto no mundo dos jogos. Com uma formação em Engenharia da Computação, sempre fui movido pela curiosidade e pela vontade de transformar ideias em realidade. <br />
+                        <span className="flex mt-4"> Nos últimos tempos, tenho me dedicado ao desenvolvimento de jogos, onde encontrei uma forma de unir minha paixão por programação com a criatividade do design. Meu sonho é publicar um jogo de sucesso na Steam, algo que reflita todo o esforço e a imaginação que coloco em cada projeto.</span>
                     </p>
                 </div>
             </div>
