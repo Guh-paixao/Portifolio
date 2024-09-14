@@ -32,7 +32,7 @@ export function ModeToggle() {
             </div>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <Button className="mx-0 focus-visible:ring-0" variant="outline" size="icon">
+                    <Button className="mx-0 focus-visible:ring-0 border-0" variant="outline" size="icon">
                         <SunMoon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 dark:text-white text-black transition-all" />
                         <span className="sr-only">Mudar Tema</span>
                     </Button>
