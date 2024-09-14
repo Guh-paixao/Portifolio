@@ -26,6 +26,11 @@ body {
   }
 }
 
+::selection {
+  background: #F5F5F5; /* Cor de fundo da seleção */
+  color: #000000;      /* Cor do texto da seleção */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

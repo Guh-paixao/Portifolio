@@ -11,6 +11,7 @@ const config: Config = {
 		extend: {
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
+				rougeScript: ['RougeScript', 'cursive']
 			},
 			fontWeight: {
 				extralight: '100',
