@@ -12,7 +12,7 @@ export default function DefaultFrame({ children }: { children: ReactNode }) {
     return (
         <div className="flex flex-1 flex-col">
             <div className="flex self-end mr-14 py-1">
-                <span className="font-poppins pointer-events-none text-dark dark:text-white">「幸福は自分自身に依存する。」</span>
+                <span className="font-poppins pointer-events-none text-base max-xl:text-sm text-dark dark:text-white">「幸福は自分自身に依存する。」</span>
             </div>
             <div className="flex flex-row flex-1 justify-center items-center">
                 <ModeToggle />

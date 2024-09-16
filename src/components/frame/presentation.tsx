@@ -17,8 +17,8 @@ export default function Presentation() {
     return (
         <div className="flex flex-col max-xl:gap-10 gap-16">
             <div className="flex flex-col gap-4 opacity-0" ref={titlesRef}>
-                <h4 className="font-poppins text-sm font-extralight text-slate-800 dark:text-slate-200 tracking-[.25em]">See You Space Cowboy...</h4>
-                <h1 className="font-poppins text-3xl font-light text-dark dark:text-white tracking-[.10em]">Eu sou/I’Am <br /><span className="relative text-4xl w-[max-content] font-semibold font-poppins before:absolute before:inset-0 before:animate-typewriter before:bg-white dark:before:bg-black after:absolute after:inset-0 after:w-[0.120em] after:animate-caret after:bg-black dark:after:bg-white">Gustavo Paixão</span></h1>
+                <h4 className="font-poppins max-xl:text-xs text-sm font-extralight text-slate-800 dark:text-slate-200 tracking-[.25em]">See You Space Cowboy...</h4>
+                <h1 className="font-poppins max-xl:text-xl text-3xl font-light text-dark dark:text-white tracking-[.10em]">Eu sou/I’Am <br /><span className="relative max-xl:text-3xl truncate text-4xl w-[max-content] font-semibold font-poppins before:absolute before:inset-0 before:animate-typewriter before:bg-white dark:before:bg-black after:absolute after:inset-0 after:w-[0.120em] after:animate-caret after:bg-black dark:after:bg-white">Gustavo Paixão</span></h1>
             </div>
             <div className="flex opacity-0" ref={textRef}>
                 <p className="font-poppins text-dark dark:text-white text-pretty w-3/6 max-xl:w-9/12 leading-loose max-xl:text-justify">

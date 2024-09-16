@@ -15,8 +15,8 @@ export default function Projects() {
     }, [])
 
     return (
-        <div className="flex flex-1 ml-48 2xl:ml-52 items-center">
-            <div className="flex flex-1 opacity-0" ref={carouselRef} >
+        <div className="flex flex-1 xl:ml-48 2xl:ml-52 items-center">
+            <div className="flex flex-1 max-xl:justify-center opacity-0" ref={carouselRef} >
                 <ProjectsCarousel />
             </div >
         </div>
