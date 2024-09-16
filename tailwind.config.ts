@@ -14,13 +14,15 @@ const config: Config = {
 				rougeScript: ['RougeScript', 'cursive']
 			},
 			fontWeight: {
-				extralight: '100',
-				light: '200',
+				thin: '100',
+				extralight: '200',
+				light: '300',
 				normal: '400',
 				medium: '500',
 				semibold: '600',
 				bold: '700',
-				extrabold: '800'
+				extrabold: '800',
+				black: '900',
 			},
 			animation: {
 				typewriter: "typewriter 2s steps(11) forwards",
