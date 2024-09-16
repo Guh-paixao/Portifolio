@@ -1,13 +1,24 @@
-import ProjectSquare from "@/components/ProjectsSquares";
-import ClearSkyBG from '@/assets/images/PNGs/projects/clearSkyBG.png';
+'use client';
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ProjectsCarousel } from "@/components/carousel";
 
 
 export default function Projects() {
+
+    const carouselRef = useRef(null)
+
+    useEffect(() => {
+        const tl = gsap.timeline()
+        tl.to(carouselRef.current, { opacity: 1, x: 10, duration: 0.5 })
+    }, [])
+
     return (
-        <main className="flex flex-1">
-            <div className="flex flex-1">
-                <ProjectSquare title="Clear Sky" subTitle="App de Clima" image={ClearSkyBG} link="https://github.com/Guh-paixao/ClearSky" date="05/2024" />
-            </div>
-        </main>
+        <div className="flex flex-1 ml-48 2xl:ml-52 items-center">
+            <div className="flex flex-1 opacity-0" ref={carouselRef} >
+                <ProjectsCarousel />
+            </div >
+        </div>
     )
 }
