@@ -2,6 +2,8 @@ import './globals.css'
 import { Poppins, Rouge_Script } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/themeProvider'
 import Layout from '@/components/frame/layout'
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 const poppins = Poppins({
@@ -32,6 +34,7 @@ export default function RootLayout({
           >
             <Layout>
               {children}
+              <Analytics />
             </Layout>
           </ThemeProvider>
         </body>

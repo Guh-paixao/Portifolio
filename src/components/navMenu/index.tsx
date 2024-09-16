@@ -8,7 +8,7 @@ export default function NavMenu() {
     const pathname = usePathname();
 
     return (
-        <nav className="flex flex-col items-start">
+        <nav className="flex flex-col max-xl:flex-row-reverse items-start max-xl:items-center max-xl:-rotate-90 max-xl:gap-8">
             <Button variant='link' className={`font-poppins font-medium ${pathname === '/' ? 'underline' : 'no-underline'}`}>
                 <Link href='/'>INÍCIO</Link>
             </Button>

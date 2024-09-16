@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import dev from '@/assets/images/PNGs/dev.png'
+import dev from '@/assets/images/PNGs/dev.jpg'
 import xPhoto from '@/assets/images/SVGs/x_photo.svg'
 import gsap from "gsap";
 
@@ -20,11 +20,11 @@ export default function About() {
     return (
         <div className="flex flex-1 ml-48 2xl:ml-52 items-center">
             <div className="flex flex-row items-start gap-10 2xl:gap-14">
-                <div ref={portraitRef} className="flex flex-col opacity-0 bg-white 2xl:w-[230px] h-80 mt-2 border-t-4 items-center justify-center select-none p-4 pt-4 2xl:gap-4 gap-2 border-zinc-600 border-2 dark:border-0">
+                <div ref={portraitRef} className="flex flex-col opacity-0 bg-white 2xl:w-[230px] h-72 mt-2 border-t-4 items-center justify-center select-none p-4 pt-4 2xl:gap-4 gap-2 border-zinc-600 border-2 dark:border-0">
                     <Image src={dev} alt="Developer" width={210} />
                     <div className="flex flex-row items-center justify-center 2xl:gap-8 xl:gap-10">
                         <a href="https://instagram.com/_gus_paixao" target="_blank" rel="noopener noreferrer">
-                            <span className="flex font-rougeScript 2xl:pl-8 xl:pl-10 text-black -rotate-6 opacity-80">@_gus_paixao</span>
+                            <span className="flex font-rougeScript text-lg 2xl:pl-8 xl:pl-10 text-black -rotate-6 opacity-80">@_gus_paixao</span>
                         </a>
                         <Image src={xPhoto} alt="X" width={30} className="opacity-80 pointer-events-none" />
                     </div>

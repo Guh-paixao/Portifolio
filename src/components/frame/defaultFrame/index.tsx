@@ -18,10 +18,10 @@ export default function DefaultFrame({ children }: { children: ReactNode }) {
                 <ModeToggle />
                 <Frame>
                     {children}
-                    <div className="flex mr-24 items-center">
+                    <div className="flex mr-24 items-center visible max-xl:hidden">
                         <NavMenu />
                     </div>
-                    <div className="flex">
+                    <div className="flex visible max-xl:hidden">
                         <ContactIndicator />
                     </div>
                 </Frame>
@@ -29,7 +29,7 @@ export default function DefaultFrame({ children }: { children: ReactNode }) {
             </div>
             <div className="flex mx-9 py-2 justify-between items-center">
                 <span className="font-poppins text-xs opacity-75 text-slate-800 dark:text-slate-400">© TODOS OS DIREITOS RESERVADOS <span className="text-slate-400">/ Inspired by Keita Yamata Portfólio</span></span>
-                <span className="font-poppins text-xs mr-5 opacity-50 text-slate-800 dark:text-slate-400">VERSION 1.0</span>
+                <span className="font-poppins text-xs mr-5 opacity-50 text-center text-slate-800 dark:text-slate-400">VERSION 1.0</span>
             </div>
         </div>
     )
