@@ -15,16 +15,16 @@ export default function Skills() {
     useEffect(() => {
         const tl = gsap.timeline()
         tl.to(skillOneRef.current, { opacity: 1, x: 10, duration: 0.2 })
-        tl.to(skillTwoRef.current, { opacity: 1, y: 10, duration: 0.3 })
-        tl.to(skillThreeRef.current, { opacity: 1, x: -10, duration: 0.4 })
+        tl.to(skillTwoRef.current, { opacity: 1, x: 10, duration: 0.3 })
+        tl.to(skillThreeRef.current, { opacity: 1, x: 10, duration: 0.4 })
         tl.to(textOneRef.current, { opacity: 1, y: 10, duration: 0.2 })
         tl.to(textTwoRef.current, { opacity: 1, y: 10, duration: 0.2 })
     }, [])
 
     return (
-        <div className="flex flex-1 ml-48 2xl:ml-52 ">
-            <div className="flex flex-col justify-center items-start gap-8">
-                <div className="flex flex-row gap-20 items-center">
+        <div className="flex flex-1 xl:ml-48 2xl:ml-52 ">
+            <div className="flex flex-col justify-center items-start max-xl:gap-6 gap-8">
+                <div className="flex flex-row max-xl:gap-16 gap-20 items-start">
                     <div ref={skillOneRef} className="flex flex-col justify-start items-start gap-2 opacity-0">
                         <SkillsTags name="React" />
                         <SkillsTags name="React Native" />
@@ -43,7 +43,7 @@ export default function Skills() {
                         <SkillsTags name="C/C++/C#" />
                         <SkillsTags name="..." />
                     </div>
-                    <div ref={skillThreeRef} className="flex flex-col justify-start items-start gap-2 opacity-0">
+                    <div ref={skillThreeRef} className="flex max-xl:hidden flex-col justify-start items-start gap-2 opacity-0">
                         <SkillsTags name="UI/UX Design" />
                         <SkillsTags name="Figma" />
                         <SkillsTags name="Godot Engine" />

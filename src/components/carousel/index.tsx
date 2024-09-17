@@ -25,7 +25,7 @@ export function ProjectsCarousel() {
                 <CarouselItem key={1} className="pt-1 md:basis-1/2">
                     <div className="p-1">
                         <Card>
-                            <CardContent className="flex items-center justify-center p-6">
+                            <CardContent className="flex items-center justify-center p-6 max-xl:p-2">
                                 <ProjectSquare title="Clear Sky" subTitle="App de Clima" image='/projects/clearSkyBG.png' link="https://github.com/Guh-paixao/ClearSky" date="05/2024" />
                             </CardContent>
                         </Card>
@@ -34,7 +34,7 @@ export function ProjectsCarousel() {
                 <CarouselItem key={2} className="pt-1 md:basis-1/2">
                     <div className="p-1">
                         <Card>
-                            <CardContent className="flex items-center justify-center p-6">
+                            <CardContent className="flex items-center justify-center p-6 max-xl:p-2">
                                 <ProjectSquare title="Finanças APP" subTitle="App de Finanças" image='/projects/financasAPPBG.png' link="https://github.com/Guh-paixao/Financas" date="10/2023" />
                             </CardContent>
                         </Card>
@@ -43,7 +43,7 @@ export function ProjectsCarousel() {
                 <CarouselItem key={3} className="pt-1 md:basis-1/2">
                     <div className="p-1">
                         <Card>
-                            <CardContent className="flex items-center justify-center p-6">
+                            <CardContent className="flex items-center justify-center p-6 max-xl:p-2">
                                 <ProjectSquare placeholder />
                             </CardContent>
                         </Card>
@@ -52,7 +52,7 @@ export function ProjectsCarousel() {
                 <CarouselItem key={4} className="pt-1 md:basis-1/2">
                     <div className="p-1">
                         <Card>
-                            <CardContent className="flex items-center justify-center p-6">
+                            <CardContent className="flex items-center justify-center p-6 max-xl:p-2">
                                 <ProjectSquare placeholder />
                             </CardContent>
                         </Card>
