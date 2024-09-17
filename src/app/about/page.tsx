@@ -5,20 +5,23 @@ import Image from "next/image";
 import dev from '@/assets/images/PNGs/dev.jpg'
 import xPhoto from '@/assets/images/SVGs/x_photo.svg'
 import gsap from "gsap";
+import LinksMobile from "@/components/externalButtons/linksMobile";
 
 export default function About() {
 
     const portraitRef = useRef(null)
     const textRef = useRef(null)
+    const linksRef = useRef(null)
 
     useEffect(() => {
         const tl = gsap.timeline()
         tl.to(portraitRef.current, { opacity: 1, x: 10, duration: 0.5 })
         tl.to(textRef.current, { opacity: 1, x: -10, duration: 1, })
+        tl.to(linksRef.current, { opacity: 1, x: -10, duration: 1, })
     }, [])
 
     return (
-        <div className="flex flex-1 xl:ml-48 2xl:ml-52 items-center">
+        <div className="flex flex-row max-xl:flex-col flex-1 xl:ml-48 2xl:ml-52 items-center gap-6">
             <div className="flex flex-row max-xl:flex-col items-start gap-10 2xl:gap-14">
                 <div ref={portraitRef} className="flex flex-col opacity-0 bg-white 2xl:w-[230px] h-72 mt-2 border-t-4 items-center justify-center select-none p-4 pt-4 2xl:gap-4 gap-2 border-zinc-600 border-2 dark:border-0">
                     <Image src={dev} alt="Developer" className="w-52" />
@@ -35,6 +38,10 @@ export default function About() {
                         <span className="flex mt-4"> Nos últimos tempos, tenho me dedicado ao desenvolvimento de jogos, onde encontrei uma forma de unir minha paixão por programação com a criatividade do design. Meu sonho é publicar um jogo de sucesso na Steam, algo que reflita todo o esforço e a imaginação que coloco em cada projeto.</span>
                     </p>
                 </div>
+            </div>
+
+            <div ref={linksRef} className="max-xl:flex hidden max-xl:visible opacity-0 self-start">
+                <LinksMobile />
             </div>
         </div>
     )
