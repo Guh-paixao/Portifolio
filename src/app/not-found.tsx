@@ -1,13 +1,13 @@
 'use client';
 
-import Link from 'next/link'
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import ErrorAnim from '@/assets/anim/404.json';
 import { Button } from '@/components/ui/button';
 
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
+
 export default function NotFound() {
-
-
     return (
         <div className='flex flex-col flex-1 xl:ml-48 2xl:ml-52 justify-center items-center gap-8'>
             <div className='flex h-48'>
@@ -15,7 +15,6 @@ export default function NotFound() {
                     loop
                     autoplay
                     animationData={ErrorAnim}
-                    rendererSettings={{ preserveAspectRatio: 'xMidYMid slice' }}
                     style={{ width: '100%', height: '100%' }}
                 />
             </div>
@@ -26,5 +25,5 @@ export default function NotFound() {
                 </Button>
             </div>
         </div>
-    )
+    );
 }
