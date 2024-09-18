@@ -20,12 +20,12 @@ export default function Layout(children: { children: ReactNode }) {
     }, []);
 
     return (
-        <main className="relative bg-white dark:bg-black">
-            <div className="flex flex-1 h-lvh opacity-0" ref={introRef}>
+        <main className="relative h-dvh bg-white dark:bg-black">
+            <div className="flex flex-1 h-screen opacity-0" ref={introRef}>
                 <IntroFrame />
             </div>
 
-            <div className="flex flex-1 opacity-0" ref={defaultRef}>
+            <div className="flex flex-1 opacity-0 h-dvh" ref={defaultRef}>
                 <DefaultFrame>
                     {children.children}
                     <Starfield
