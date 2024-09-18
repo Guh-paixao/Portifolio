@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Minimalista
 
-## Getting Started
+Este é o meu portfólio pessoal minimalista, inspirado no design do portfólio de Keita Yamada. O projeto reflete minha abordagem estética e funcional, apresentando meus trabalhos e habilidades de forma clara e concisa.
 
-First, run the development server:
+## Imagens do Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Versão Dark
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Dark Mode](src\assets\images\PNGs\dark.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Versão Light
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Light Mode](src\assets\images\PNGs\white.png)
 
-## Learn More
+## Tecnologias Usadas
 
-To learn more about Next.js, take a look at the following resources:
+- React
+- Next.js
+- Shadcn/ui
+- Tailwind CSS
+- TypeScript
+- GSAP
+- Lucide
+- Figma
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este projeto está licenciado sob a [MIT](https://github.com/Guh-paixao/Portifolio/blob/master/LICENSE).
 
-## Deploy on Vercel
+## Contato
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Sinta-se à vontade para entrar em contato:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Gustavo Paixão
+- gustavopaixao.dev@gmail.com
