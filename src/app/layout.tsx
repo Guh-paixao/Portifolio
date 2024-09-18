@@ -3,6 +3,7 @@ import { Poppins, Rouge_Script } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme/themeProvider'
 import Layout from '@/components/frame/layout'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from 'next'
 
 
@@ -55,6 +56,7 @@ export default function RootLayout({
             <Layout>
               {children}
               <Analytics />
+              <SpeedInsights />
             </Layout>
           </ThemeProvider>
         </body>
