@@ -19,7 +19,7 @@ export default function ProjectSquare({ title, subTitle, image, link, date, plac
                         <h2 className={`font-poppins font-light max-xl:text-base text-lg text-slate-200 ${!placeholder ? 'text-white' : 'text-slate-400'}`}>{subTitle ? subTitle : 'Em Breve'}</h2>
                     </div>
                     <div className="flex mb-2">
-                        <span className="font-poppins font-light  max-xl:text-sm text-base text-slate-300">{date}</span>
+                        <span className="font-poppins font-normal  max-xl:text-sm text-base text-slate-300">{date}</span>
                     </div>
                 </a>
             </div>

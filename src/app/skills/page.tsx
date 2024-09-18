@@ -25,7 +25,7 @@ export default function Skills() {
         <div className="flex flex-1 xl:ml-48 2xl:ml-52 ">
             <div className="flex flex-col justify-center items-start max-xl:gap-6 gap-8">
                 <div className="flex flex-row max-xl:gap-16 gap-20 items-start">
-                    <div ref={skillOneRef} className="flex flex-col justify-start items-start gap-2 opacity-0">
+                    <div ref={skillOneRef} className="flex flex-col justify-start items-start max-xl:gap-4 gap-2 opacity-0">
                         <SkillsTags name="React" />
                         <SkillsTags name="React Native" />
                         <SkillsTags name="Tailwind CSS" />
@@ -34,7 +34,7 @@ export default function Skills() {
                         <SkillsTags name="React Query" />
                         <SkillsTags name="..." />
                     </div>
-                    <div ref={skillTwoRef} className="flex flex-col justify-start items-start gap-2 opacity-0">
+                    <div ref={skillTwoRef} className="flex flex-col justify-start items-start  max-xl:gap-4  gap-2 opacity-0">
                         <SkillsTags name="HTML" />
                         <SkillsTags name="Node.js" />
                         <SkillsTags name="SQL / Prisma" />
@@ -50,7 +50,7 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <p ref={textOneRef} className="flex font-poppins leading-loose 2xl:w-8/12 text-justify text-pretty text-black dark:text-white opacity-0">Sou desenvolvedor fullstack e designer UX/UI, especializado em criar interfaces WEB e Mobile funcionais e atraentes. Com domínio em HTML, CSS, JavaScript, TypeScript, e frameworks como React, React Native, e Tailwind, foco em entregar experiências de usuário eficientes e visualmente impactantes. Minha abordagem é sempre centrada no usuário, combinando tecnologia de ponta com design intuitivo para criar soluções que realmente fazem a diferença.</p>
+                    <p ref={textOneRef} className="flex font-poppins leading-loose max-xl:w-11/12 2xl:w-8/12 text-justify text-pretty text-black dark:text-white opacity-0">Sou desenvolvedor fullstack e designer UX/UI, especializado em criar interfaces WEB e Mobile funcionais e atraentes. Com domínio em HTML, CSS, JavaScript, TypeScript, e frameworks como React, React Native, e Tailwind, foco em entregar experiências de usuário eficientes e visualmente impactantes. Minha abordagem é sempre centrada no usuário, combinando tecnologia de ponta com design intuitivo para criar soluções que realmente fazem a diferença.</p>
                 </div>
             </div>
         </div>
