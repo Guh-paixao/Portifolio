@@ -29,7 +29,7 @@ export default function Presentation() {
             </div>
 
             <div className="flex opacity-0" ref={textRef}>
-                <p className="font-poppins text-dark dark:text-white text-pretty w-3/6 max-xl:w-9/12 leading-loose max-xl:text-justify">
+                <p className="font-poppins text-dark text-justify dark:text-white text-pretty w-3/6 max-xl:w-9/12 leading-loose max-xl:text-justify">
                     Sou um designer e programador front-end, formado em Engenharia da Computação pela UFPA. Minha especialidade é criar interfaces digitais que aliam estética e funcionalidade, sempre focado em proporcionar experiências intuitivas e eficazes. Resido no Brasil e aplico minha expertise técnica e criativa no desenvolvimento de soluções digitais de alta qualidade.
                 </p>
             </div>
