@@ -21,7 +21,7 @@ export function ProjectsCarousel() {
             orientation="vertical"
             className="w-full max-w-xs"
         >
-            <CarouselContent className="-mt-1 h-[200px] 2xl:h-[450px]">
+            <CarouselContent className="-mt-1 max-xl:h-[158px] h-[200px] 2xl:h-[450px]">
                 <CarouselItem key={1} className="pt-1 md:basis-1/2">
                     <div className="p-1">
                         <Card>

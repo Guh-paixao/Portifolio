@@ -11,7 +11,7 @@ type ProjectSquareProps = {
 
 export default function ProjectSquare({ title, subTitle, image, link, date, placeholder }: ProjectSquareProps) {
     return (
-        <div className={`flex flex-col h-40 w-72 max-xl:w-60 ${placeholder ? 'bg-transparent' : 'bg-black'}`}>
+        <div className={`flex flex-col h-40 w-72 max-xl:w-52 max-xl:h-32 ${placeholder ? 'bg-transparent' : 'bg-black'}`}>
             <div className={`flex flex-col flex-1 border-2 bg-cover ${placeholder ? 'border-white dark:border-slate-400' : 'border-white'}`} style={{ backgroundImage: `url(${image})` }}>
                 <a href={link} target="_blank" rel="noopener noreferrer" className="flex flex-1 flex-col justify-center items-center">
                     <div className="flex flex-1 flex-col justify-center items-center select-none">
