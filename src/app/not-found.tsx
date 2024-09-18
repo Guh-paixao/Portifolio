@@ -19,7 +19,7 @@ export default function NotFound() {
                 />
             </div>
             <div className='flex flex-col gap-4 justify-center items-center'>
-                <h2 className='font-poppins font-light'>Parece que você se perdeu...</h2>
+                <h2 className='font-poppins font-light text-dark dark:text-white'>Parece que você se perdeu...</h2>
                 <Button variant='default'>
                     <Link href="/" className='font-poppins font-semibold'>Voltar pro Início</Link>
                 </Button>
