@@ -21,7 +21,7 @@ export default function Layout(children: { children: ReactNode }) {
 
     return (
         <main className="relative h-dvh bg-white dark:bg-black">
-            <div className="flex flex-1 h-screen opacity-0" ref={introRef}>
+            <div className="flex flex-1 h-dvh opacity-0" ref={introRef}>
                 <IntroFrame />
             </div>
 

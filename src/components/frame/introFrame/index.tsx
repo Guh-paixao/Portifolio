@@ -21,7 +21,7 @@ export default function IntroFrame() {
     })
 
     return (
-        <main className="flex flex-1 justify-center items-center" >
+        <main className="flex flex-1 h-dvh justify-center items-center" >
             <div className="flex flex-1 flex-col h-screen justify-between items-center mb-4 select-none">
                 <div className="flex flex-1 flex-col xl:flex-row 2xl:flex-row gap-3 justify-center items-center">
                     <h1 ref={mainTextRef} className="font-poppins font-medium text-2xl text-black dark:text-white opacity-0">Seja Bem-Vindo(a)</h1>
