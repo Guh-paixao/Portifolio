@@ -5,6 +5,10 @@ import gsap from "gsap";
 import DefaultFrame from "./defaultFrame";
 import IntroFrame from "./introFrame";
 import Starfield from "react-starfield";
+import { clarity } from 'react-microsoft-clarity';
+
+
+
 
 export default function Layout(children: { children: ReactNode }) {
 
@@ -12,6 +16,7 @@ export default function Layout(children: { children: ReactNode }) {
     const defaultRef = useRef(null);
 
     useEffect(() => {
+        clarity.init('o58wv8t8ya');
         const tl = gsap.timeline();
         tl.to(defaultRef.current, { display: "none" })
             .to(introRef.current, { duration: 3.7, opacity: 1 })
