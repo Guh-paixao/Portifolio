@@ -6,11 +6,11 @@ Este é o meu portfólio pessoal minimalista, inspirado no design do portfólio 
 
 ### Versão Dark
 
-![Dark Mode](src\assets\images\PNGs\dark.png)
+![Dark Mode](src/assets/images/PNGs/dark.png)
 
 ### Versão Light
 
-![Light Mode](src\assets\images\PNGs\white.png)
+![Light Mode](src/assets/images/PNGs/white.png)
 
 ## Tecnologias Usadas
 
