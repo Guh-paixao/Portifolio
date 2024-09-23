@@ -50,7 +50,7 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <p ref={textOneRef} className="flex font-poppins leading-loose max-xl:w-11/12 2xl:w-8/12 text-justify text-pretty text-black dark:text-white opacity-0">Sou desenvolvedor fullstack e designer UX/UI, especializado em criar interfaces WEB e Mobile funcionais e atraentes. Com domínio em HTML, CSS, JavaScript, TypeScript, e frameworks como React, React Native, e Tailwind, foco em entregar experiências de usuário eficientes e visualmente impactantes. Minha abordagem é sempre centrada no usuário, combinando tecnologia de ponta com design intuitivo para criar soluções que realmente fazem a diferença.</p>
+                    <p ref={textOneRef} className="flex font-poppins leading-loose max-xl:w-11/12 xl:w-8/12 2xl:w-8/12 text-justify text-pretty text-black dark:text-white opacity-0">Sou desenvolvedor fullstack e designer UX/UI, especializado em criar interfaces WEB e Mobile funcionais e atraentes. Com domínio em HTML, CSS, JavaScript, TypeScript, e frameworks como React, React Native, e Tailwind, foco em entregar experiências de usuário eficientes e visualmente impactantes. Minha abordagem é sempre centrada no usuário, combinando tecnologia de ponta com design intuitivo para criar soluções que realmente fazem a diferença.</p>
                 </div>
             </div>
         </div>
