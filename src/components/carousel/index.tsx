@@ -44,12 +44,21 @@ export function ProjectsCarousel() {
                     <div className="p-1">
                         <Card>
                             <CardContent className="flex items-center justify-center p-6 max-xl:p-2">
-                                <ProjectSquare placeholder />
+                                <ProjectSquare title="Restaurant API" subTitle="API de Restaurantes" image="/projects/APIRestaurantBG.png" link="https://github.com/Guh-paixao/Restaurant-API" date="09/2024" />
                             </CardContent>
                         </Card>
                     </div>
                 </CarouselItem>
                 <CarouselItem key={4} className="pt-1 md:basis-1/2">
+                    <div className="p-1">
+                        <Card>
+                            <CardContent className="flex items-center justify-center p-6 max-xl:p-2">
+                                <ProjectSquare placeholder />
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+                <CarouselItem key={5} className="pt-1 md:basis-1/2">
                     <div className="p-1">
                         <Card>
                             <CardContent className="flex items-center justify-center p-6 max-xl:p-2">
