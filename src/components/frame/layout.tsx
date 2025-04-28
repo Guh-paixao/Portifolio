@@ -34,7 +34,7 @@ export default function Layout(children: { children: ReactNode }) {
                 <DefaultFrame>
                     {children.children}
                     <Starfield
-                        starCount={2000}
+                        starCount={2600}
                         starColor={[255, 255, 255]}
                         speedFactor={0.02}
                         backgroundColor="black"
