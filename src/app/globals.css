@@ -96,3 +96,31 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Personalização da barra de rolagem */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Largura fina */
+  height: 6px; /* Altura fina (se necessário) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #333; /* Cor de fundo para o "thumb" */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 2px solid transparent; /* Borda de separação */
+  background-clip: content-box; /* Certifica que a borda não afeta o thumb */
+}
+
+/* Barra de rolagem para o tema escuro */
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #fff; /* Cor branca no modo escuro */
+}
+
+/* Barra de rolagem para o tema claro */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #333; /* Cor preta no modo claro */
+}
+
+/* Barra de rolagem no hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor mais clara ao passar o mouse */
+}
