@@ -27,6 +27,7 @@ const config: Config = {
 			animation: {
 				typewriter: "typewriter 2s steps(11) forwards",
 				caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+				fadeIn: 'fadeIn 0.5s ease-in-out forwards',
 			},
 			colors: {
 				background: 'hsl(var(--background))',
@@ -99,6 +100,10 @@ const config: Config = {
 					'100%': {
 						opacity: '0',
 					},
+				},
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
 				},
 			}
 		}
