@@ -7,6 +7,7 @@ interface Repo {
     description: string;
     html_url: string;
     language: string | null;
+    created_at: string;
 }
 
 export default function RepoList() {
@@ -60,10 +61,18 @@ export default function RepoList() {
         fetchRepos();
     }, [page]);
 
+    const formatDate = (dateString: string) => {
+        const options: Intl.DateTimeFormatOptions = { day: '2-digit', month: 'short', year: 'numeric' };
+        return new Date(dateString).toLocaleDateString('pt-BR', options);
+    };
+
     return (
-        <div className="w-full max-w-3xl mx-auto p-4">
-            <h1 className="text-center text-2xl font-bold mb-4">Lista de Projetos</h1> {/* Texto acima da lista */}
-            <div className="h-[500px] overflow-y-auto flex flex-col gap-6 custom-scrollbar p-2">
+        <div className="w-full max-w-base md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto px-4 md:px-8 py-8">
+            <h1 className="text-center text-base md:text-base lg:text-md xl:text-lg 2xl:text-xl font-bold mb-8 text-dark dark:text-white">
+                Meus Repositórios
+            </h1>
+
+            <div className="h-[70vh] overflow-y-auto flex flex-col gap-6 p-2 md:p-4 lg:p-6 custom-scrollbar">
                 {repos.map((repo, index) => {
                     const isLast = repos.length === index + 1;
 
@@ -71,38 +80,52 @@ export default function RepoList() {
                         <div
                             key={repo.id}
                             ref={isLast ? lastRepoRef : null}
-                            className="flex flex-col border border-dark dark:border-white rounded p-4 hover:bg-white/10 dark:hover:bg-dark/90 transition w-full max-w-[90%] mx-auto opacity-0 animate-fadeIn" // Ajuste de largura
-                            style={{ animationDelay: `${index * 0.05}s` }} // Delay para o efeito
+                            className="flex flex-col justify-between border border-dark/20 dark:border-white/20 rounded-lg p-4 hover:bg-dark/5 dark:hover:bg-white/5 transition-all w-full opacity-0 animate-fadeIn min-h-[160px]"
+                            style={{ animationDelay: `${index * 0.05}s` }}
                         >
                             <a
                                 href={repo.html_url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex flex-col gap-2 w-full"
+                                className="flex flex-col h-full"
                             >
-                                <h2 className="font-semibold text-lg text-dark dark:text-white break-words">
+                                <h2 className="font-semibold text-base md:text-base lg:text-md xl:text-lg 2xl:text-xl text-dark dark:text-white break-words">
                                     {repo.name}
                                 </h2>
 
                                 {repo.description && (
-                                    <p className="text-dark/70 dark:text-white/70 text-sm">
+                                    <p className="text-base text-dark/70 dark:text-white/70 flex-grow">
                                         {repo.description}
                                     </p>
                                 )}
 
-                                {repo.language && (
-                                    <span className="inline-block mt-2 px-3 py-1 text-xs rounded-full border border-dark dark:border-white text-dark dark:text-white hover:scale-105 transition w-max">
-                                        {repo.language}
+                                <div className="flex justify-between items-center mt-4">
+                                    {repo.language ? (
+                                        <span className="px-3 py-1 text-xs rounded-full border border-dark/50 dark:border-white/50 text-dark dark:text-white w-max">
+                                            {repo.language}
+                                        </span>
+                                    ) : (
+                                        <span />
+                                    )}
+
+                                    <span className="text-xs md:text-sm text-dark/50 dark:text-white/50">
+                                        {formatDate(repo.created_at)}
                                     </span>
-                                )}
+                                </div>
                             </a>
                         </div>
                     );
                 })}
 
-                {isLoading && <p className="text-center text-dark dark:text-white">Carregando...</p>}
+                {isLoading && (
+                    <p className="text-center text-dark dark:text-white text-sm md:text-base">
+                        Carregando...
+                    </p>
+                )}
                 {!hasMore && repos.length > 0 && (
-                    <p className="text-center text-dark dark:text-white">Mais em Breve!</p>
+                    <p className="text-center text-dark dark:text-white text-sm md:text-base">
+                        Mais em breve!
+                    </p>
                 )}
             </div>
         </div>
