@@ -67,7 +67,7 @@ export default function RepoList() {
     };
 
     return (
-        <div className="w-full max-w-base md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto px-4 md:px-8 py-8">
+        <div className="w-full max-w-xs md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto px-4 md:px-8 py-8">
             <h1 className="text-center text-base md:text-base lg:text-md xl:text-lg 2xl:text-xl font-bold mb-8 text-dark dark:text-white">
                 Meus Repositórios
             </h1>
@@ -80,26 +80,26 @@ export default function RepoList() {
                         <div
                             key={repo.id}
                             ref={isLast ? lastRepoRef : null}
-                            className="flex flex-col justify-between border border-dark/20 dark:border-white/20 rounded-lg p-4 hover:bg-dark/5 dark:hover:bg-white/5 transition-all w-full opacity-0 animate-fadeIn min-h-[160px]"
+                            className="flex flex-col border border-dark/20 dark:border-white/20 rounded-lg p-4 hover:bg-dark/5 dark:hover:bg-white/5 transition-all w-full opacity-0 animate-fadeIn"
                             style={{ animationDelay: `${index * 0.05}s` }}
                         >
                             <a
                                 href={repo.html_url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex flex-col h-full"
+                                className="flex flex-col"
                             >
                                 <h2 className="font-semibold text-base md:text-base lg:text-md xl:text-lg 2xl:text-xl text-dark dark:text-white break-words">
                                     {repo.name}
                                 </h2>
 
                                 {repo.description && (
-                                    <p className="text-base text-dark/70 dark:text-white/70 flex-grow">
+                                    <p className="text-base text-dark/70 dark:text-white/70 mt-2">
                                         {repo.description}
                                     </p>
                                 )}
 
-                                <div className="flex justify-between items-center mt-4">
+                                <div className="flex justify-between items-center mt-4 pt-4 border-t border-dark/20 dark:border-white/20">
                                     {repo.language ? (
                                         <span className="px-3 py-1 text-xs rounded-full border border-dark/50 dark:border-white/50 text-dark dark:text-white w-max">
                                             {repo.language}
@@ -114,6 +114,7 @@ export default function RepoList() {
                                 </div>
                             </a>
                         </div>
+
                     );
                 })}
 
