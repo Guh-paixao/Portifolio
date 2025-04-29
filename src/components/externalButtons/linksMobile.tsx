@@ -9,7 +9,7 @@ export default function LinksMobile() {
                 <a target="_blank" href="https://github.com/Guh-paixao" rel="noopener noreferrer" className="font-poppins text-xs tracking-[5px] font-medium">GITHUB</a>
             </Button>
             <Button variant='link' className="" title="Instagram" asChild>
-                <a target="_blank" href="https://instagram.com/_gus_paixao" rel="noopener noreferrer" className="font-poppins text-xs tracking-[5px] font-medium">INSTAGRAM</a>
+                <a target="_blank" href="https://www.instagram.com/_gus.dev/" rel="noopener noreferrer" className="font-poppins text-xs tracking-[5px] font-medium">INSTAGRAM</a>
             </Button>
             <Button variant='link' className="" title="LinkedIn" asChild>
                 <a target="_blank" href="https://linkedin.com/in/gustavo-borges14" rel="noopener noreferrer" className="font-poppins text-xs tracking-[5px] font-medium">LINKEDIN</a>

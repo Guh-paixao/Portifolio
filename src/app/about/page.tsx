@@ -32,8 +32,8 @@ export default function About() {
                         <Skeleton className="w-52 max-xl:w-40 bg-slate-400 h-full" />
                     }
                     <div className="flex flex-row items-center justify-center gap-4 2xl:gap-8 xl:gap-10">
-                        <a href="https://instagram.com/_gus_paixao" target="_blank" rel="noopener noreferrer">
-                            <span className="flex font-rougeScript text-lg 2xl:pl-8 xl:pl-10 text-black -rotate-6 opacity-80">@_gus_paixao</span>
+                        <a href="https://www.instagram.com/_gus.dev/" target="_blank" rel="noopener noreferrer">
+                            <span className="flex font-rougeScript text-lg 2xl:pl-8 xl:pl-10 text-black -rotate-6 opacity-80">@_gus.dev</span>
                         </a>
                         <Image src={xPhoto} alt="X" className="opacity-80 max-xl:w-6 w-8 pointer-events-none" />
                     </div>
