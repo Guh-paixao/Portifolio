@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-// import { ProjectsCarousel } from "@/components/carousel";
 import RepositoryList from "@/components/RepositoryList";
 
 
@@ -25,7 +24,6 @@ export default function Projects() {
                 <p className="font-poppins text-black dark:text-white text-pretty text-justify w-11/12 xl:w-72 2xl:w-80 leading-loose">Além disso, nos meus projetos futuros, vou focar em criar interfaces móveis e web usando o Figma. Pretendo desenvolver designs intuitivos e modernos, garantindo uma ótima experiência para o usuário. <span className="max-xl:hidden visible">Com um enfoque em design responsivo e prototipagem ágil, buscarei trazer inovação e eficiência para cada projeto.</span></p>
             </div>
             <div className="flex max-xl:justify-center opacity-0" ref={carouselRef} >
-                {/* <ProjectsCarousel /> */}
                 <RepositoryList />
             </div >
         </div>
